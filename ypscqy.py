@@ -24,7 +24,7 @@ driver = webdriver.Chrome(
     chrome_options=chrome_options,
 )
 
-conn = pymssql.connect('127.0.0.1', 'sa', '1qaz!QAZ', 'CENTERDB')
+conn = pymssql.connect('ip', 'user', 'pwd', 'db')
 curs = conn.cursor()
 sql = "INSERT INTO YPSCQY(Number,Code,Class,Province,CompanyName,LR,CR,QR,RAddr,PAddr,PScope,BeginDate,ExpireDate) " \
       "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
